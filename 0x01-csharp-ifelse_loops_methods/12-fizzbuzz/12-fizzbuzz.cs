@@ -16,10 +16,14 @@ namespace _12_fizzbuzz
                 {  
                 Console.Write("Fizz ");  
                 }  
-                else if (i % 5 == 0)  
+                else if (i % 5 == 0 && i != 100)  
                 {  
                 Console.Write("Buzz ");  
-                }  
+                }
+                else if (i == 100)
+                {
+                    Console.Write("Buzz");
+                }
                 else  
                 {  
                     Console.Write(i + " ");  
