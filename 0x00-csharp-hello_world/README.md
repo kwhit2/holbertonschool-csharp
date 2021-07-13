@@ -2,7 +2,7 @@
 
 ## Resources
 - [Install Visual Studio Code and .NET Core SDK](https://intranet.hbtn.io/rltoken/tWsXKwIHV0JWDAyuLOvRGA)
-- [Introduction to the C# Language and the .NET Framework](hhttps://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
+- [Introduction to the C# Language and the .NET Framework](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
 - [Get started with C# and Visual Studio Code](https://intranet.hbtn.io/rltoken/uTW4-oIGZqXIcpaZYcRieQ)
 - [C# Tutorial for Beginners (1:20 - 5:18)](https://intranet.hbtn.io/rltoken/lOzBhjrf1YJVhd8bM2Wwww)
 - [Strings (C# Programming Guide)](https://intranet.hbtn.io/rltoken/n13jddnjeKFB7EKCaxDlSw)
