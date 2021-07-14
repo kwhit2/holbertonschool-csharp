@@ -8,7 +8,7 @@ class Dictionary
     {
         if (myList.Count == 0)
         {
-            return;
+            return "";
         }
         var max = myList.Aggregate((l, r) => l.Value > r.Value ? l : r).Key;
         return (max);
