@@ -20,12 +20,12 @@ class MyQueue
         if (aQueue.Contains(search))
         {
             int searchIndex = aQueue.ToArray().ToList().IndexOf(search);  // how to get index of element at a linked list
-            while (aQueue.Count > searchIndex - 1)  // - 1 because an extra one was being printed
+            while (aQueue.Count > searchIndex + 1)
             {
                 aQueue.Dequeue();
             }
         }
         aQueue.Enqueue(newItem);
-        return aQueue;
+        return (aQueue);
     }
 }
