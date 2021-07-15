@@ -26,6 +26,6 @@ class MyStack
             }
         }
         aStack.Push(newItem);
-        return aStack;
+        return (aStack);
     }
 }
