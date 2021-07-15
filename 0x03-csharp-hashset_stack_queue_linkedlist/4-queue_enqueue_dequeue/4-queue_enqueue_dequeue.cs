@@ -19,7 +19,7 @@ class MyQueue
         Console.WriteLine("Queue contains \"{0}\": {1}", search, aQueue.Contains(search));
         if (aQueue.Contains(search))
         {
-            while (aQueue.Count.Dequeue() != search)
+            while (aQueue.Dequeue() != search)
             {
                 continue;
             }
