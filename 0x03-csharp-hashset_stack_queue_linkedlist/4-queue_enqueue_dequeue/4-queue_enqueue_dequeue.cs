@@ -19,10 +19,9 @@ class MyQueue
         Console.WriteLine("Queue contains \"{0}\": {1}", search, aQueue.Contains(search));
         if (aQueue.Contains(search))
         {
-            int searchIndex = aQueue.ToArray().ToList().IndexOf(search);  // how to get index of element at a linked list
-            while (aQueue.Count > searchIndex + 1)
+            while (aQueue.Count.Dequeue() != search)
             {
-                aQueue.Dequeue();
+                continue;
             }
         }
         aQueue.Enqueue(newItem);
