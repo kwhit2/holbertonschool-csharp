@@ -12,5 +12,6 @@ class LList
             sum += values;
         }
         return (sum);
+        // or just use LINQ Namespace and: return myLList.Sum();
     }
 }
