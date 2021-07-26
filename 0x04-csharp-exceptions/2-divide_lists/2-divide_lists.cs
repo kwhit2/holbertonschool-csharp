@@ -6,7 +6,7 @@ using System.Collections.Generic;
         public static List<int> Divide(List<int> list1, List<int> list2, int listLength)
         {
         List<int> resList = new List<int>();
-            for (int i = 0; i < list1.Count; i++)
+            for (int i = 0; i < listLength; i++)
             {
                 try
                 {
