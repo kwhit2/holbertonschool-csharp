@@ -1,9 +1,9 @@
-﻿using Enemies;
-using System;
+﻿using System;
 
 namespace Enemies
 {
-    public class Zombie
+    ///<summary>Public class that defines a Zombie</summary>
+    class Zombie
     {
 
     }
