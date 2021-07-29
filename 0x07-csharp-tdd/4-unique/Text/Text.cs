@@ -9,15 +9,23 @@ namespace Text
         ///<summary>UniqueChar method: returns the index of the first non-repeating character of a string.</summary>
         public static int UniqueChar(string s)
         {
-            if (s.Length <= 0)
+            Dictionary<char,int> dic = new Dictionary<char,int>();
+            for (int i = 0; i < s.Length; i++)
             {
-                return -1;
-            }
-            for (int i = 0; i < s.Length -1; i++)
-            {
-                if (s[i].ToString() != s[i + 1].ToString())
+                if (!dic.ContainsKey(s[i]))
                 {
-                    return (i + 1);
+                    dic.Add(s[i], 1); 
+                }
+                else
+                {
+                    dic[s[i]] +=1;
+                }
+            }
+            for (int i = 0; i <s.Length; i++)
+            {
+                if (dic[s[i]]==1)
+                {
+                    return i;
                 }
             }
             return -1;
