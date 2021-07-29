@@ -30,7 +30,7 @@ namespace Text.Tests
             string testWord = "kooooo";
             int output = Str.UniqueChar(testWord);
 
-            Assert.AreEqual(1, output);
+            Assert.AreEqual(0, output);
         }
 
         [Test]
