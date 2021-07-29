@@ -50,5 +50,14 @@ namespace Text.Tests
 
             Assert.AreEqual(6, output);
         }
+
+        [Test]
+        public void TestMiddle()
+        {
+            string testWord = "oookoo";
+            int output = Str.UniqueChar(testWord);
+
+            Assert.AreEqual(3, output);
+        }
     }
 }
