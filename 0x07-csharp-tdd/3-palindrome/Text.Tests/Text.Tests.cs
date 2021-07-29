@@ -49,11 +49,11 @@ namespace Text.Tests
         [Test]
         public void TestPuncLowercaseSpaces()
         {
-            string word = "a dog, a plan, a banana: Nugget";
+            string word = "A man, a plan, a canal: Panama.";
 
             bool output = Str.IsPalindrome(word);
 
-            Assert.AreEqual(false, output);
+            Assert.AreEqual(true, output);
         }
     }
 }
