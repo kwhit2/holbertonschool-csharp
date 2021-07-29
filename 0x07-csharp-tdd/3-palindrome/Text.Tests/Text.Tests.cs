@@ -9,7 +9,7 @@ namespace Text.Tests
         [Test]
         public void Test1()
         {
-            string word = "eye";
+            string word = "yay";
 
             bool output = Str.IsPalindrome(word);
 
@@ -17,9 +17,39 @@ namespace Text.Tests
         }
 
         [Test]
-        public void Test2()
+        public void TestNotPal()
         {
-            string word = "eyes";
+            string word = "yays";
+
+            bool output = Str.IsPalindrome(word);
+
+            Assert.AreEqual(false, output);
+        }
+
+        [Test]
+        public void TestEmpty()
+        {
+            string word = "";
+
+            bool output = Str.IsPalindrome(word);
+
+            Assert.AreEqual(true, output);
+        }
+
+        [Test]
+        public void Test1Letter()
+        {
+            string word = "y";
+
+            bool output = Str.IsPalindrome(word);
+
+            Assert.AreEqual(true, output);
+        }
+
+        [Test]
+        public void TestPuncLowercaseSpaces()
+        {
+            string word = "a dog, a plan, a banana: Nugget";
 
             bool output = Str.IsPalindrome(word);
 
