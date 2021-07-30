@@ -8,7 +8,7 @@ namespace MyMath
         ///<summary>divides all elements of a matrix</summary>
         public static int[,] Divide(int[,] matrix, int num)
         {
-                        if (matrix == null)
+            if (matrix == null)
             {
                 return null;
             }
