@@ -7,7 +7,7 @@ class Obj
     ///<summary>Check if Type Int</summary>
     public static bool IsOfTypeInt(object obj)
     {
-        if (obj is int)
+        if (obj.GetType() == typeof(int))
             return true;
         else
             return false;
