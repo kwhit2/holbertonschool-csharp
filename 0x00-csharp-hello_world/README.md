@@ -1,7 +1,6 @@
 # 0x00 C# - Hello, World
 - [Project Page](https://intranet.hbtn.io/projects/388)
 
-
 ## Learning Objectives
 - What is the meaning behind the name C#?
 - Who is the lead architect of the development team of C#?
