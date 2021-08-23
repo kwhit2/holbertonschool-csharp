@@ -9,7 +9,7 @@ class VectorMath
         double[] crossProduct = {0, 0, 0};
         double[] not3d = new double[1] {-1};
 
-        if (!matrix.GetLength(0) == 3 || !matrix.GetLength(1) == 3)
+        if (vector1.Length != 3 || vector2.Length != 3)
         {
             return not3d;
         }
