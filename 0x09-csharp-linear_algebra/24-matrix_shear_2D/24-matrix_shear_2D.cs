@@ -26,7 +26,7 @@ class MatrixMath
         }
         else
         {
-            return twoDmatrix;
+            return defaultMatrix;
         }
 
         for (int i = 0; i < 2; i++)
