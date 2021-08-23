@@ -8,11 +8,12 @@ class Program
         double[,] matrix2d2 = { { 1, 7 }, { -8, -2 } };
         double[,] matrix3d1 = { { 14, -3, 0 }, { -11, -5, 3 }, { 2, -9, 13 } };
         double[,] matrix3d2 = { { 6, 16, 21 }, { 5, 2, 0 }, { 1, 3, 7 } };
+        double scalar = 4;
         double[,] result2d;
         double[,] result3d;
 
-        result2d = MatrixMath.Add(matrix2d1, matrix2d2);
-        result3d = MatrixMath.Add(matrix3d1, matrix3d2);
+        result2d = MatrixMath.MultiplyScalar(matrix2d1, scalar);
+        result3d = MatrixMath.MultiplyScalar(matrix3d1, scalar);
 
         for (int i = 0; i < result2d.GetLength(0); i++)
         {
