@@ -17,3 +17,7 @@
 - ImageProcessor.cs, ImageProcessor.csproj : Converts each image to grayscale
 - ImageProcessor.cs, ImageProcessor.csproj : Reduces each image to only black and white values, based on a given threshold.
 - ImageProcessor.cs, ImageProcessor.csproj : Creates a thumbnail image based on a given height (in pixels).
+
+## Resources
+- [Image Processing Using C#](https://www.codeproject.com/Articles/33838/Image-Processing-using-C)
+- [Image.Save Method: Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.save?view=net-5.0)
