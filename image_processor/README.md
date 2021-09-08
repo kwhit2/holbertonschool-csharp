@@ -20,4 +20,4 @@
 
 ## Resources
 - [Image Processing Using C#](https://www.codeproject.com/Articles/33838/Image-Processing-using-C)
-- [Image.Save Method: Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.save?view=net-5.0)
+- [Image.Save Method : Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.save?view=net-5.0)
