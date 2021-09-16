@@ -24,4 +24,4 @@
 - [Compute luminance of a pixel](https://cs.stackexchange.com/questions/11876/how-do-i-compute-the-luminance-of-a-pixel)
 - [GetThumbNailImage : Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.getthumbnailimage?view=net-5.0)
 - [Aspect Ratio](https://efundies.com/scale-an-image-in-c-sharp-preserving-aspect-ratio/)
-- [Image Quality]
+- [Image Quality](https://www.infinetsoft.com/Post/How-to-generate-high-Quality-thumbnail-images-and-maintain-aspect-ration-in-asp-net-c/2504#.YUNYZbhKg2w)
