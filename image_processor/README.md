@@ -22,3 +22,6 @@
 - [Image Processing Using C#](https://www.codeproject.com/Articles/33838/Image-Processing-using-C)
 - [Image.Save Method : Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.save?view=net-5.0)
 - [Compute luminance of a pixel](https://cs.stackexchange.com/questions/11876/how-do-i-compute-the-luminance-of-a-pixel)
+- [GetThumbNailImage : Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.getthumbnailimage?view=net-5.0)
+- [Aspect Ratio](https://efundies.com/scale-an-image-in-c-sharp-preserving-aspect-ratio/)
+- [Image Quality]

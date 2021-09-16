@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Imaging;
 
 ///<summary> ImageProcessor class </summary>
 class ImageProcessor
@@ -90,5 +91,47 @@ class ImageProcessor
             temp = (Bitmap)bmap.Clone();
             temp.Save("C:\\Users\\kfw2\\holbertonschool-csharp\\image_processor\\" + fileBW);
         }
+    }
+
+    ///<summary> Thumbnail method: creates a thumbnail image </summary>
+    public static void Thumbnail(string[] filenames, int height)
+    {
+        foreach (string file in filenames)
+        {
+            string fileWithoutImages = file.Remove(0, 7);
+            string fileWithoutImagesAndJPG = fileWithoutImages.Remove(fileWithoutImages.Length - 4, 4);
+            string fileTH = fileWithoutImagesAndJPG + "_th" + ".jpg";
+
+            Bitmap temp = new Bitmap(file);
+            Bitmap bmap = (Bitmap)temp.Clone();
+            int imgHeight = bmap.Height;
+            int imgWidth = bmap.Width;
+            double aspectRatioX = (double)imgWidth / imgHeight;
+            int thumbWidth = (int)(height * aspectRatioX);
+
+            Image thumbNailImg = bmap.GetThumbnailImage(thumbWidth, height, ()=>false, IntPtr.Zero);
+
+            var qualityEncoder = System.Drawing.Imaging.Encoder.Quality;
+            var quality = (long)100; // Image quality 
+            var ratio = new EncoderParameter(qualityEncoder, quality);
+            var codecParams = new EncoderParameters(1);
+            codecParams.Param[0] = ratio;
+            var codecInfo = GetEncoder(ImageFormat.Jpeg);
+
+            thumbNailImg.Save("C:\\Users\\kfw2\\holbertonschool-csharp\\image_processor\\" + fileTH, codecInfo, codecParams);
+        }
+    }
+    /// <summary> Image Decoder : found on many resources </summary>
+    private static ImageCodecInfo GetEncoder(ImageFormat format)
+    {
+        ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();
+        foreach (ImageCodecInfo codec in codecs)
+        {
+            if (codec.FormatID == format.Guid)
+            {
+                return codec;
+            }
+        }
+        return null;
     }
 }
