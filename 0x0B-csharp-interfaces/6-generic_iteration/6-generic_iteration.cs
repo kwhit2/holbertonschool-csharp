@@ -32,7 +32,7 @@ public interface IBreakable
     void Break();
 }
 
-///<summary> ICollectable method </summary>
+///<summary> public method ICollectable() </summary>
 public interface ICollectable
 {
     ///<summary> public property isCollected </summary>
