@@ -137,6 +137,7 @@ public class Key : Base, ICollectable
 ///<summary> class RoomObjects </summary>
 public class RoomObjects
 {
+    ///<summary> public static void IterateAction </summary>
     public static void IterateAction(List<Base> roomObjects, Type type)
     {
         foreach (Base item in roomObjects)
