@@ -61,7 +61,7 @@ public class Door : Base, IInteractive
 ///<summary> class Decoration </summary>
 public class Decoration : Base, IInteractive, IBreakable
 {
-    ///<summary public bool isQuestItem </summary>
+    ///<summary> public bool isQuestItem </summary>
     public bool isQuestItem;
 
     ///<summary> public constructor </summary>
@@ -142,10 +142,10 @@ public class Key : Base, ICollectable
     }
 }
 
-///<summary> class Objs<T> : lsit all objects </summary>
+///<summary> class Objs<T/> : list all objects </summary>
 class Objs<T> : IEnumerable<T>
 {
-    ///<summary> public List<T> objsList </summary>
+    ///<summary> public List<T/> objsList </summary>
     List<T> objList = new List<T>();
 
     ///<summary> public method Add() </summary>
@@ -154,7 +154,7 @@ class Objs<T> : IEnumerable<T>
         objList.Add(obj);
     }
 
-    ///<summary> public method IEnumerator<T> GetEnumerator </summary>
+    ///<summary> public method IEnumerator<T/> GetEnumerator </summary>
     public IEnumerator<T> GetEnumerator()
     {
         return objList.GetEnumerator();
