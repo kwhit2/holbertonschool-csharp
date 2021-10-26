@@ -14,23 +14,30 @@ public abstract class Base
     }
 }
 
-///<summary> IInteractive method </summary>
+///<summary> public method IInteractive() </summary>
 public interface IInteractive
 {
+    ///<summary> public method Interact() </summary>
     void Interact();
 }
 
-///<summary> IBreakable method </summary>
+///<summary> public method IBreakable() </summary>
 public interface IBreakable
 {
+    ///<summary> public property durability </summary>
     int durability { get; set; }
+
+    ///<summary> public method Break() </summary>
     void Break();
 }
 
-///<summary> ICollectable method </summary>
+///<summary> public method ICollectable() </summary>
 public interface ICollectable
 {
+    ///<summary> public property isCollected </summary>
     bool isCollected { get; set; }
+
+    ///<summary> public method Collect() </summary>
     void Collect();
 }
 
@@ -53,7 +60,7 @@ public class Door : Base, IInteractive
 ///<summary> class Decoration </summary>
 public class Decoration : Base, IInteractive, IBreakable
 {
-    ///<summary public bool isQuestItem </summary>
+    ///<summary> public bool isQuestItem </summary>
     public bool isQuestItem;
 
     ///<summary> public constructor </summary>
