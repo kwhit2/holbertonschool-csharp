@@ -1,4 +1,5 @@
 ﻿using System;
+
 ///<summary> abstract class Base</summary>
 public abstract class Base
 {
