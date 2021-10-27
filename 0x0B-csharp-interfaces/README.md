@@ -22,10 +22,10 @@
 - All your private classes and members should be documented but without XML documentation tags
 
 ## Task Descriptions
-- 0-abstract_thinking/, 0-abstract_thinking/0-abstract_thinking.csproj, 0-abstract_thinking/0-abstract_thinking.cs : Create an abstract class called Base
-- 1-user_interface/, 1-user_interface/1-user_interface.csproj, 1-user_interface/1-user_interface.cs : Based on 0-abstract_thinking, create an interface called IInteractive.
-- 2-doors/, 2-doors/2-doors.csproj, 2-doors/2-doors.cs : Based on 1-user_interface, delete the TestObject class. Create a new class called Door that inherits from Base and IInteractive.
-- 3-decorations/, 3-decorations/3-decorations.csproj, 3-decorations/3-decorations.cs : Based on 2-doors, create a new class called Decoration that inherits from Base, IInteractive, and IBreakable.
-- 4-keys/, 4-keys/4-keys.csproj, 4-keys/4-keys.cs : Based on 3-decorations, create a new class called Key that inherits from Base and ICollectable.
-- 5-iterate_act/, 5-iterate_act/5-iterate_act.csproj, 5-iterate_act/5-iterate_act.cs : Based on 4-keys, create a new class called RoomObjects and a method called IterateAction. This method should take a list of all objects, iterate through it, and execute methods depending on what interface that item implements. (ex: if the item uses IInteractive, your IterateAction method should call Interact() on it)
-- 6-generic_iteration/, 6-generic_iteration/6-generic_iteration.csproj, 6-generic_iteration/6-generic_iteration.cs : Based on 5-iterate_act, remove the RoomObjects class created in the previous task. Create a new generic class Objs<T> that creates a collection of type T objects that can be iterated through using foreach.
+- 0-abstract_thinking/, 0-abstract_thinking/0-abstract_thinking.cs, 0-abstract_thinking/0-abstract_thinking.cs : Create an abstract class called Base
+- 1-user_interface/, 1-user_interface/1-user_interface.cs, 1-user_interface/1-user_interface.cs : Based on 0-abstract_thinking, create an interface called IInteractive.
+- 2-doors/, 2-doors/2-doors.cs, 2-doors/2-doors.cs : Based on 1-user_interface, delete the TestObject class. Create a new class called Door that inherits from Base and IInteractive.
+- 3-decorations/, 3-decorations/3-decorations.cs, 3-decorations/3-decorations.cs : Based on 2-doors, create a new class called Decoration that inherits from Base, IInteractive, and IBreakable.
+- 4-keys/, 4-keys/4-keys.cs, 4-keys/4-keys.cs : Based on 3-decorations, create a new class called Key that inherits from Base and ICollectable.
+- 5-iterate_act/, 5-iterate_act/5-iterate_act.cs, 5-iterate_act/5-iterate_act.cs : Based on 4-keys, create a new class called RoomObjects and a method called IterateAction. This method should take a list of all objects, iterate through it, and execute methods depending on what interface that item implements. (ex: if the item uses IInteractive, your IterateAction method should call Interact() on it)
+- 6-generic_iteration/, 6-generic_iteration/6-generic_iteration.cs, 6-generic_iteration/6-generic_iteration.cs : Based on 5-iterate_act, remove the RoomObjects class created in the previous task. Create a new generic class Objs<T> that creates a collection of type T objects that can be iterated through using foreach.
