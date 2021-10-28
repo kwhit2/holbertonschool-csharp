@@ -115,19 +115,19 @@ class Player
     /// <summary> private method CheckStatus() </summary>
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
-        if (e.currentHP == this.maxHp)
+        if (e.currentHp == this.maxHp)
         {
             this.status = $"{this.name} is in perfect health!";
         }
-        else if (e.currentHP >= (this.maxHp / 2))
+        else if (e.currentHp >= (this.maxHp / 2))
         {
             this.status = $"{this.name} is doing well!";
         }
-        else if (e.currentHP >= (this.maxHp / 4))
+        else if (e.currentHp >= (this.maxHp / 4))
         {
             this.status = $"{this.name} isn't doing too great...";
         }
-        else if (e.currentHP > 0)
+        else if (e.currentHp > 0)
         {
             this.status = $"{this.name} needs help!";
         }
@@ -153,11 +153,11 @@ delegate float CalculateModifier(float baseValue, Modifier modifier);
 class CurrentHPArgs : EventArgs
 {
     /// <summary> public property currentHP </summary>
-       public readonly float currentHP;
+       public readonly float currentHp;
     
     /// <summary> public constructor CurrentHPArgs </summary>
     public CurrentHPArgs(float newHP)
     {
-        this.currentHP = newHP;
+        this.currentHp = newHP;
     }
 }
