@@ -27,7 +27,7 @@ class JSONStorage
     public void New(BaseClass obj)
     {
         string kvPair;
-        kvPair = String.Format("{0}:{1}", obj.GetType().Name, obj.Id);
+        kvPair = String.Format("{0}:{1}", obj.GetType().Name, obj.id);
         this.objects.Add(kvPair, obj);
     }
 
